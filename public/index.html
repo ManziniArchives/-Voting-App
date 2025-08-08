@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Voting App | freeCodeCamp</title>
+  <link rel="icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>freeCodeCamp Voting App</h1>
+
+  <div id="auth">
+    <form id="login">
+      <input id="luser" placeholder="username" required>
+      <input type="password" id="lpass" placeholder="password" required>
+      <button>Login</button>
+    </form>
+
+    <form id="register">
+      <input id="ruser" placeholder="username" required>
+      <input type="password" id="rpass" placeholder="password" required>
+      <button>Register</button>
+    </form>
+    <button id="logout" style="display:none">Logout</button>
+  </div>
+
+  <hr>
+
+  <div id="create" style="display:none">
+    <h2>Create Poll</h2>
+    <input id="title" placeholder="Question">
+    <div id="opts">
+      <input placeholder="Option 1" class="opt">
+      <input placeholder="Option 2" class="opt">
+    </div>
+    <button onclick="addOption()">+ Add option</button>
+    <button onclick="createPoll()">Create</button>
+  </div>
+
+  <hr>
+
+  <h2>All Polls</h2>
+  <div id="polls"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
