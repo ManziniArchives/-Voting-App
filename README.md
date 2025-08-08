@@ -1,1 +1,1 @@
-# ImageSearchAbstract
+# Voting App
